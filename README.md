@@ -10,13 +10,28 @@ The project combines UI/UX research with a working public prototype. It focuses 
 
 The deployed prototype runs on Google Cloud Run and is intended for portfolio and academic review.
 
-![GapTracker dashboard](docs/images/dashboard.png)
+<img src="docs/images/dashboard.png" alt="GapTracker dashboard" width="320">
 
 ## Product Preview
 
-| Dashboard | Course Directory | Course Detail |
-|---|---|---|
-| ![](docs/images/dashboard.png) | ![](docs/images/courses-directory.png) | ![](docs/images/course-detail.png) |
+<table>
+  <tr>
+    <th>Dashboard</th>
+    <th>Course Directory</th>
+    <th>Course Detail</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="docs/images/dashboard.png" alt="GapTracker dashboard" width="200">
+    </td>
+    <td valign="top">
+      <img src="docs/images/courses-directory.png" alt="GapTracker course directory" width="385">
+    </td>
+    <td valign="top">
+      <img src="docs/images/course-detail.png" alt="GapTracker course detail" width="200">
+    </td>
+  </tr>
+</table>
 
 ## What GapTracker Does
 
@@ -117,6 +132,7 @@ GapTracker/
   README.md
   .gitignore
   docs/
+    hci-user-research-report.md
     research-summary.md
     GapTracker-Research-Models.pptx
     images/
@@ -133,26 +149,20 @@ GapTracker/
 - The readiness score is a product-support indicator, not a scientifically validated prediction of exam performance.
 - Manual course and topic management is still being refined.
 
-## Roadmap
-
-- Export and add the full AI Studio source code.
-- Add review-and-edit controls for AI-extracted syllabus topics.
-- Improve manual topic creation for courses without uploaded syllabi.
-- Expand gap capture with richer evidence options.
-- Add clearer study recommendations and progress history.
-- Explore optional aggregated insights for teaching teams while preserving student privacy.
-
 ## My Contributions
 
-- Conducted and analyzed student UX research.
-- Defined the product problem and gap-management model.
-- Designed the gap-capture and exam-readiness workflows.
-- Created the product interface and visual direction.
-- Developed the functional AI Studio web prototype.
-- Added AI-assisted syllabus extraction.
+- Continued the project independently after the initial research phase.
+- Redesigned and expanded the original product concept.
+- Developed the functional GapTracker web application.
+- Implemented AI-assisted syllabus extraction and topic generation.
+- Designed the current user interface and product workflows.
+- Added course, gap, readiness, and syllabus-management functionality.
 - Deployed the application to Google Cloud Run.
-- Prepared the research deck, README, and documentation.
 
-## License
+## Usage and Rights
 
-No license has been selected yet.
+This repository is publicly available for portfolio and academic-review purposes only.
+
+The current application, later product development, deployment, and technical documentation were created by **Ehab Marrid**. The original academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and is credited accordingly.
+
+Copyright © 2026 Ehab Marrid. All rights reserved. No permission is granted to copy, modify, distribute, sublicense, or use the application commercially without prior written permission. Original jointly created research materials remain attributed to their respective contributors.
