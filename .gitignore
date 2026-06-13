@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.cjs
+
+# Builds and generated output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vite/
+coverage/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Caches and temp files
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.pptx
+.vscode/
+.idea/
+
+# Swift / Xcode generated files
+.build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Graphify generated output
+graphify-out/
+
+# Local generated workspaces
+outputs/
