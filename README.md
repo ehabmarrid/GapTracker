@@ -10,7 +10,15 @@ The project combines UI/UX research with a working public prototype. It focuses 
 
 The deployed prototype runs on Google Cloud Run and is intended for portfolio and academic review.
 
-<img src="docs/images/dashboard.png" alt="GapTracker dashboard" width="320">
+<p align="center">
+  <a href="docs/images/dashboard.png">
+    <img
+      src="docs/images/dashboard.png"
+      alt="GapTracker dashboard"
+      width="700"
+    >
+  </a>
+</p>
 
 ## Product Preview
 
@@ -81,7 +89,7 @@ The syllabus feature is designed to accept an uploaded course document and use a
 3. Convert the extracted content into a trackable checklist.
 4. Connect completed topics with the readiness dashboard.
 
-### AI And Free-Tier Constraints
+### AI and Free-Tier Constraints
 
 The deployed prototype uses Gemini API features with free-tier constraints. AI actions may be temporarily unavailable if quota or rate limits are reached.
 
@@ -89,19 +97,24 @@ AI-generated syllabus topics should also be reviewed by the student. Extracted t
 
 ## Research Foundation
 
-GapTracker was designed from student UX research, including:
+GapTracker was designed through a structured UI/UX research process focused on how university students identify, describe, prioritize, and resolve academic knowledge gaps.
 
-- 36 survey respondents.
-- Qualitative user interviews.
-- Personas.
-- Competitive analysis.
-- UX principles such as visibility of system status, recognition over recall, reduced cognitive load, error prevention, and privacy.
+The initial academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and included:
 
-Read the full [Research Summary](docs/research-summary.md).
+- A student survey with 36 respondents
+- Three qualitative user interviews
+- User personas representing different learning contexts
+- Competitive analysis of existing productivity and study tools
+- Mapping research findings to product and interaction decisions
+- UX principles including visibility of system status, recognition over recall, cognitive-load reduction, error prevention, privacy, and psychological safety
 
-Download the English research model deck:
+The research showed that students often notice knowledge gaps too late, struggle to define exactly what they did not understand, and postpone addressing gaps even after identifying them.
 
-- [GapTracker Research Models PPTX](docs/GapTracker-Research-Models.pptx)
+### Research Documents
+
+- [Full HCI User Research Report](docs/hci-user-research-report.md)
+- [Research Summary](docs/research-summary.md)
+- [Research Models Presentation](docs/GapTracker-Research-Models.pptx)
 
 ## Research-To-Design Decisions
 
@@ -116,14 +129,28 @@ Download the English research model deck:
 
 ## Technology
 
-Current deployed prototype:
+### Application and AI
 
 - Google AI Studio
 - Gemini API
-- Google Cloud Run
-- Generated web frontend
+- Responsive web application
 
-The exported application source code has not been added to this repository yet. Once it is added, this section should be updated with the exact framework, package manager, and local development commands.
+### Deployment
+
+- Google Cloud Run
+
+### Design and Research
+
+- Figma
+- UI/UX research
+- User surveys and interviews
+- Competitive analysis
+
+## Repository Scope
+
+This repository presents the deployed GapTracker prototype together with its UI/UX research, product documentation, screenshots, and design materials.
+
+The application is publicly available through the live demo. The application source code is not currently distributed through this repository.
 
 ## Repository Contents
 
@@ -141,13 +168,12 @@ GapTracker/
       course-detail.png
 ```
 
-## Current Prototype Notes
+## Prototype Status and Limitations
 
-- The app is a portfolio and academic prototype.
-- Gemini-powered features may be rate-limited during public testing.
-- AI-extracted syllabus topics should be reviewed before being treated as final.
-- The readiness score is a product-support indicator, not a scientifically validated prediction of exam performance.
-- Manual course and topic management is still being refined.
+- GapTracker is a functional portfolio and academic prototype.
+- Gemini-powered features may be temporarily unavailable when public API quotas or rate limits are reached.
+- AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
+- The readiness score is a product-support indicator and has not been scientifically validated as a predictor of exam performance.
 
 ## My Contributions
 
@@ -158,11 +184,16 @@ GapTracker/
 - Designed the current user interface and product workflows.
 - Added course, gap, readiness, and syllabus-management functionality.
 - Deployed the application to Google Cloud Run.
+- Prepared the GitHub README, research documentation, and project attribution materials.
 
 ## Usage and Rights
 
 This repository is publicly available for portfolio and academic-review purposes only.
 
-The current application, later product development, deployment, and technical documentation were created by **Ehab Marrid**. The original academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and is credited accordingly.
+The current GapTracker application, later product development, deployment, interface design, and technical documentation were created independently by **Ehab Marrid**.
 
-Copyright © 2026 Ehab Marrid. All rights reserved. No permission is granted to copy, modify, distribute, sublicense, or use the application commercially without prior written permission. Original jointly created research materials remain attributed to their respective contributors.
+The original academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and remains credited to both contributors.
+
+Copyright © 2026 Ehab Marrid for the independently created application and documentation. All rights reserved. No permission is granted to reproduce, modify, distribute, sublicense, or commercially use the independently created application materials or repository contents without prior written permission.
+
+Rights and attribution for the jointly created research materials remain with their respective contributors.
