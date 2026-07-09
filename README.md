@@ -1,59 +1,73 @@
-# GapTracker
-
-GapTracker is a research-driven academic knowledge-gap management web app that helps students capture unclear topics, organize course material, and monitor exam readiness.
-
-The project combines UI/UX research with a working public prototype. It focuses on a student problem that is easy to recognize: knowledge gaps are often noticed too late, poorly defined, and left untreated until exam pressure builds.
-
-## Live Demo
-
-**[Open GapTracker](https://gaptracker-academic-knowledge-gap-management-117567148344.europe-west2.run.app/)**
-
-The deployed prototype runs on Google Cloud Run and is intended for portfolio and academic review.
+# GapTracker: Exam Readiness
 
 <p align="center">
-  <a href="docs/images/dashboard.png">
-    <img
-      src="docs/images/dashboard.png"
-      alt="GapTracker dashboard"
-      width="700"
-    >
+  <a href="https://apps.apple.com/us/app/gaptracker-exam-readiness/id6782966586">
+    <img src="https://img.shields.io/badge/Open_on_the-App_Store-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Open GapTracker on the App Store">
   </a>
 </p>
+
+<p align="center">
+  <strong>Your syllabus, a study plan.</strong><br>
+  GapTracker helps students turn courses, syllabi, exam dates, and knowledge gaps into a clear readiness score and a daily study focus.
+</p>
+
+<p align="center">
+  iPhone & iPad · Education · English & Hebrew · iOS 18+
+</p>
+
+---
 
 ## Product Preview
 
 <table>
   <tr>
     <th>Dashboard</th>
-    <th>Course Directory</th>
-    <th>Course Detail</th>
+    <th>Exam Readiness</th>
+    <th>Today's Focus</th>
   </tr>
   <tr>
     <td valign="top">
-      <img src="docs/images/dashboard.png" alt="GapTracker dashboard" width="200">
+      <img src="docs/images/dashboard.png" alt="GapTracker dashboard screenshot" width="250">
     </td>
     <td valign="top">
-      <img src="docs/images/courses-directory.png" alt="GapTracker course directory" width="385">
+      <img src="docs/images/exam-readiness.png" alt="GapTracker exam readiness screenshot" width="250">
     </td>
     <td valign="top">
-      <img src="docs/images/course-detail.png" alt="GapTracker course detail" width="200">
+      <img src="docs/images/todays-focus.png" alt="GapTracker today's focus screenshot" width="250">
     </td>
   </tr>
 </table>
 
 ## What GapTracker Does
 
-- Creates a personal academic workspace after sign-in.
-- Starts new users with an empty dashboard instead of predefined demo courses.
-- Lets students add courses manually.
-- Supports syllabus upload for AI-assisted course-topic extraction.
-- Tracks syllabus progress and course readiness.
-- Helps students record and prioritize understanding gaps.
-- Highlights critical gaps that need attention before exams.
+GapTracker is an exam-readiness app for students who want a clearer answer to one question:
+
+> Am I actually ready for my next exam?
+
+The app helps students:
+
+- Add courses manually.
+- Import a syllabus from a PDF or a photo.
+- Use AI-assisted syllabus processing to extract course topics.
+- Review extracted topics before adding them.
+- Track topic difficulty, severity, and progress.
+- See a readiness score for each course and overall readiness across courses.
+- Prioritize critical gaps before exams.
+- Build a realistic daily focus plan based on the study time available.
+- Run focus sessions, track study minutes, and build a study streak.
+- Keep progress available across devices with optional iCloud sync.
+
+## App Store Version
+
+GapTracker is now a real iOS app available on the App Store:
+
+**[Open GapTracker: Exam Readiness on the App Store](https://apps.apple.com/us/app/gaptracker-exam-readiness/id6782966586)**
+
+The older Google Cloud web demo is no longer active, so this repository now focuses on the shipped iOS product, product screenshots, research background, and documentation.
 
 ## Problem
 
-Students often accumulate hidden academic knowledge gaps during lectures, practice, and assignments. By the time those gaps become obvious, the student may already be close to an exam and under pressure.
+Students often discover academic knowledge gaps too late. A topic may feel unclear during a lecture, practice session, or assignment, but without a simple way to record and prioritize it, the gap is usually postponed until exam pressure builds.
 
 The research behind GapTracker identified three recurring issues:
 
@@ -67,33 +81,52 @@ GapTracker turns a vague moment of confusion into a trackable learning object:
 
 ```text
 Moment of confusion
-  -> quick capture
-  -> course/topic context
-  -> priority level
-  -> treatment action
-  -> readiness update
+  -> course or syllabus topic
+  -> severity and urgency
+  -> readiness impact
+  -> daily focus plan
+  -> progress update
 ```
 
 This gives students a clearer answer to three questions:
 
 - What do I still not understand?
 - What matters most before the exam?
-- What have I already resolved?
+- What should I study today?
 
 ## AI-Assisted Syllabus Processing
 
-The syllabus feature is designed to accept an uploaded course document and use an AI model to:
+GapTracker includes AI-assisted syllabus processing for students who do not want to build every course manually.
 
-1. Identify course structure.
-2. Extract topics and learning units.
-3. Convert the extracted content into a trackable checklist.
-4. Connect completed topics with the readiness dashboard.
+The syllabus workflow is designed to:
 
-### AI and Free-Tier Constraints
+1. Accept a syllabus from a PDF or photo.
+2. Extract course topics, learning units, difficulty signals, and grading structure.
+3. Let the student review the extracted content before adding it.
+4. Convert the approved topics into a trackable course checklist.
+5. Connect completed topics and unresolved gaps to the readiness dashboard.
 
-The deployed prototype uses Gemini API features with free-tier constraints. AI actions may be temporarily unavailable if quota or rate limits are reached.
+AI-generated topics should always be reviewed by the student. The extraction quality can depend on the syllabus layout, scan quality, and how clearly the course information is written.
 
-AI-generated syllabus topics should also be reviewed by the student. Extracted topics may require correction depending on the quality and structure of the uploaded document.
+## Readiness and Prioritization
+
+GapTracker is built around three connected product views:
+
+### Dashboard
+
+The dashboard gives a quick overview of the semester, including upcoming exams, current streak, weekly study time, today's focus, and open gaps by course.
+
+### Exam Readiness
+
+The readiness screen shows one score per course and an overall readiness score. The score is designed to consider factors such as course progress, topic severity, credit weight, and how close the exam is.
+
+### Today's Focus
+
+Today's Focus ranks what the student should study next based on urgency, severity, and the daily study-time budget. Instead of showing every possible task, it turns the semester into a realistic plan for the day.
+
+## Privacy-Oriented Product Direction
+
+GapTracker is designed as a personal academic tool. Courses, topics, notes, and progress are treated as private study data. Only syllabus text that the student chooses to import is processed for topic extraction.
 
 ## Research Foundation
 
@@ -101,14 +134,12 @@ GapTracker was designed through a structured UI/UX research process focused on h
 
 The initial academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and included:
 
-- A student survey with 36 respondents
-- Three qualitative user interviews
-- User personas representing different learning contexts
-- Competitive analysis of existing productivity and study tools
-- Mapping research findings to product and interaction decisions
-- UX principles including visibility of system status, recognition over recall, cognitive-load reduction, error prevention, privacy, and psychological safety
-
-The research showed that students often notice knowledge gaps too late, struggle to define exactly what they did not understand, and postpone addressing gaps even after identifying them.
+- A student survey with 36 respondents.
+- Three qualitative user interviews.
+- User personas representing different learning contexts.
+- Competitive analysis of existing productivity and study tools.
+- Mapping research findings to product and interaction decisions.
+- UX principles including visibility of system status, recognition over recall, cognitive-load reduction, error prevention, privacy, and psychological safety.
 
 ### Research Documents
 
@@ -116,41 +147,48 @@ The research showed that students often notice knowledge gaps too late, struggle
 - [Research Summary](docs/research-summary.md)
 - [Research Models Presentation](docs/GapTracker-Research-Models.pptx)
 
-## Research-To-Design Decisions
+## Research-To-Product Decisions
 
 | Research finding | Product decision |
 |---|---|
-| Students struggle to define unclear topics | Support quick gap capture with short descriptions and optional evidence |
-| Students postpone treatment | Show visible statuses and treatment actions |
-| All gaps can feel equally urgent | Add criticality and priority indicators |
-| Students notice gaps close to exams | Encourage in-the-moment capture during study |
-| Students prefer lightweight tools | Keep setup and creation flows short |
-| Students fear social judgment | Keep tracking private by default |
+| Students notice gaps close to exams | Readiness score and exam countdowns make urgency visible |
+| Students struggle to define unclear topics | Syllabus import and topic extraction give gaps clearer course context |
+| Students postpone treatment | Today's Focus turns urgent gaps into a daily plan |
+| All gaps can feel equally important | Severity and critical-gap ranking help prioritize |
+| Students prefer lightweight tools | Courses can be added manually or generated from a syllabus |
+| Students fear social judgment | Progress tracking is private and student-controlled |
 
 ## Technology
 
-### Application and AI
+### iOS Application
 
-- Google AI Studio
-- Gemini API
-- Responsive web application
+- Native iOS app for iPhone and iPad.
+- SwiftUI-based interface and app workflow.
+- iOS/iPadOS 18+ support.
+- English and Hebrew localization.
+- On-device course, topic, note, and progress management.
+- Optional iCloud sync for keeping courses available across devices.
 
-### Deployment
+### Product, Design, and Research
 
-- Google Cloud Run
-
-### Design and Research
-
-- Figma
-- UI/UX research
-- User surveys and interviews
-- Competitive analysis
+- Figma for interface design and product exploration.
+- UI/UX research, surveys, interviews, personas, and competitive analysis.
+- App Store product screenshots and release assets.
 
 ## Repository Scope
 
-This repository presents the deployed GapTracker prototype together with its UI/UX research, product documentation, screenshots, and design materials.
+This repository is a public portfolio and product-documentation repository for GapTracker.
 
-The application is publicly available through the live demo. The application source code is not currently distributed through this repository.
+It includes:
+
+- Product description.
+- App Store link.
+- Screenshots.
+- Research documents.
+- Design background.
+- Product and feature documentation.
+
+The application source code is not currently distributed through this repository.
 
 ## Repository Contents
 
@@ -164,33 +202,34 @@ GapTracker/
     GapTracker-Research-Models.pptx
     images/
       dashboard.png
-      courses-directory.png
-      course-detail.png
+      exam-readiness.png
+      todays-focus.png
 ```
 
-## Prototype Status and Limitations
+## Product Status and Limitations
 
-- GapTracker is a functional portfolio and academic prototype.
-- Gemini-powered features may be temporarily unavailable when public API quotas or rate limits are reached.
+- GapTracker is an active App Store product.
+- The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
-- The readiness score is a product-support indicator and has not been scientifically validated as a predictor of exam performance.
+- The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
+- Availability of AI-assisted features may depend on network access and the external AI-processing service.
 
 ## My Contributions
 
 - Continued the project independently after the initial research phase.
-- Redesigned and expanded the original product concept.
-- Developed the functional GapTracker web application.
+- Redesigned and expanded the original product concept into a real iOS app.
+- Designed the current user interface, app screenshots, and product workflows.
+- Built the course, syllabus, gap, readiness, focus, and progress-tracking flows.
 - Implemented AI-assisted syllabus extraction and topic generation.
-- Designed the current user interface and product workflows.
-- Added course, gap, readiness, and syllabus-management functionality.
-- Deployed the application to Google Cloud Run.
+- Added readiness scoring, critical-gap prioritization, and daily focus planning.
+- Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 
 ## Usage and Rights
 
 This repository is publicly available for portfolio and academic-review purposes only.
 
-The current GapTracker application, later product development, deployment, interface design, and technical documentation were created independently by **Ehab Marrid**.
+The current GapTracker application, later product development, interface design, product documentation, screenshots, and technical documentation were created independently by **Ehab Marrid**.
 
 The original academic research phase was completed collaboratively by **Ehab Marrid and Saleem Trudi** and remains credited to both contributors.
 
