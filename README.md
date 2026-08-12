@@ -1,18 +1,18 @@
-# GapTracker: Exam Readiness
+# GapTracker: Study Planner
 
 <p align="center">
-  <a href="https://apps.apple.com/us/app/gaptracker-exam-readiness/id6782966586">
-    <img src="https://img.shields.io/badge/Open_on_the-App_Store-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Open GapTracker on the App Store">
+  <a href="https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB">
+    <img src="https://img.shields.io/badge/Open_on_the-App_Store-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Open GapTracker: Study Planner on the App Store">
   </a>
 </p>
 
 <p align="center">
   <strong>Your syllabus, a study plan.</strong><br>
-  GapTracker helps students turn courses, syllabi, exam dates, and knowledge gaps into a clear readiness score and a daily study focus.
+  GapTracker helps students turn courses, syllabi, assignments, exam dates, grades, and knowledge gaps into a clear readiness score and a daily study focus.
 </p>
 
 <p align="center">
-  iPhone & iPad · Education · English & Hebrew · iOS 18+
+  iPhone & iPad · Version 2.0.1 · Education · English & Hebrew · iOS 18+
 </p>
 
 ---
@@ -40,7 +40,7 @@
 
 ## What GapTracker Does
 
-GapTracker is an exam-readiness app for students who want a clearer answer to one question:
+GapTracker is a study planner and exam-readiness app for students who want a clearer answer to one question:
 
 > Am I actually ready for my next exam?
 
@@ -54,14 +54,21 @@ The app helps students:
 - See a readiness score for each course and overall readiness across courses.
 - Prioritize critical gaps before exams.
 - Build a realistic daily focus plan based on the study time available.
+- Plan assignments with due dates, grade weights, time estimates, and subtasks.
+- See assignments due today, this week, or overdue.
+- Track current GPA, target grades, projected results, passed courses, and degree completion.
+- Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
+- Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
 - Keep progress available across devices with optional iCloud sync.
 
 ## App Store Version
 
-GapTracker is now a real iOS app available on the App Store:
+**GapTracker: Study Planner**, version **2.0.1**, is available on the App Store:
 
-**[Open GapTracker: Exam Readiness on the App Store](https://apps.apple.com/us/app/gaptracker-exam-readiness/id6782966586)**
+**[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB)**
+
+The app was previously published as **GapTracker: Exam Readiness**.
 
 The older Google Cloud web demo is no longer active, so this repository now focuses on the shipped iOS product, product screenshots, research background, and documentation.
 
@@ -114,7 +121,7 @@ GapTracker is built around three connected product views:
 
 ### Dashboard
 
-The dashboard gives a quick overview of the semester, including upcoming exams, current streak, weekly study time, today's focus, and open gaps by course.
+The dashboard gives a quick overview of the semester, including current GPA, upcoming assignments and exams, the next deadline, current streak, weekly study time, today's focus, and open gaps by course.
 
 ### Exam Readiness
 
@@ -123,6 +130,22 @@ The readiness screen shows one score per course and an overall readiness score. 
 ### Today's Focus
 
 Today's Focus ranks what the student should study next based on urgency, severity, and the daily study-time budget. Instead of showing every possible task, it turns the semester into a realistic plan for the day.
+
+## Assignments, GPA, and Study Momentum
+
+Version 2.0.1 expands GapTracker beyond exam readiness into broader semester planning.
+
+### Assignment Planning
+
+Assignments can include a due date, grade weight, and estimated completion time, then be divided into smaller subtasks. Dedicated views make it easier to see what is due today, this week, or overdue, and assignments can be completed using the built-in focus timer.
+
+### GPA and Degree Progress
+
+Students can add passed courses, view their current GPA, track degree completion, and set a target grade for each active course to project where their GPA may land. Entering a final grade moves a completed course to Passed and updates the GPA.
+
+### Study Momentum
+
+Focus sessions can be started for a topic or assignment and are recorded in the study history. Active sessions can be followed from the Lock Screen, progress is available through the Home Screen widget, and Insights highlights study patterns and strongest study days.
 
 ## Privacy-Oriented Product Direction
 
@@ -166,7 +189,8 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 - SwiftUI-based interface and app workflow.
 - iOS/iPadOS 18+ support.
 - English and Hebrew localization.
-- On-device course, topic, note, and progress management.
+- On-device course, topic, assignment, grade, note, and progress management.
+- Lock Screen study sessions, a Home Screen progress widget, and study Insights.
 - Optional iCloud sync for keeping courses available across devices.
 
 ### Product, Design, and Research
@@ -209,6 +233,8 @@ GapTracker/
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
+- The current App Store release is version 2.0.1.
+- Version 2.0.1 includes a redesigned Exam Readiness interface.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
@@ -222,6 +248,7 @@ GapTracker/
 - Built the course, syllabus, gap, readiness, focus, and progress-tracking flows.
 - Implemented AI-assisted syllabus extraction and topic generation.
 - Added readiness scoring, critical-gap prioritization, and daily focus planning.
+- Built assignment planning, GPA and degree-progress tracking, study Insights, and widget and Lock Screen integrations.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 
