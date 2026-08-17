@@ -8,11 +8,11 @@
 
 <p align="center">
   <strong>Your syllabus, a study plan.</strong><br>
-  GapTracker helps students turn courses, syllabi, assignments, exam dates, grades, and knowledge gaps into a clear readiness score and a daily study focus.
+  GapTracker helps students turn courses, syllabi, Moodle coursework, assignments, exam dates, grades, and knowledge gaps into a clear readiness score and a daily study focus.
 </p>
 
 <p align="center">
-  iPhone & iPad · Version 2.0.1 · Education · English & Hebrew · iOS 18+
+  iPhone & iPad · Version 2.1 · Education · English & Hebrew · iOS 18+
 </p>
 
 ---
@@ -60,11 +60,14 @@ The app helps students:
 - Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
 - Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
+- Connect directly to supported Moodle institutions without a GapTracker-operated backend.
+- Import Moodle courses, assignments, submission status, calendar deadlines, and exams.
+- Refresh Moodle manually or receive updates through privacy-conscious background synchronization.
 - Keep progress available across devices with optional iCloud sync.
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **2.0.1**, is available on the App Store:
+**GapTracker: Study Planner**, version **2.1**, is available on the App Store:
 
 **[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB)**
 
@@ -133,7 +136,7 @@ Today's Focus ranks what the student should study next based on urgency, severit
 
 ## Assignments, GPA, and Study Momentum
 
-Version 2.0.1 expands GapTracker beyond exam readiness into broader semester planning.
+Version 2.0.1 expanded GapTracker beyond exam readiness into broader semester planning.
 
 ### Assignment Planning
 
@@ -146,6 +149,52 @@ Students can add passed courses, view their current GPA, track degree completion
 ### Study Momentum
 
 Focus sessions can be started for a topic or assignment and are recorded in the study history. Active sessions can be followed from the Lock Screen, progress is available through the Home Screen widget, and Insights highlights study patterns and strongest study days.
+
+## Moodle Integration
+
+Version 2.1 introduces direct Moodle integration, allowing students to bring courses, assignments, deadlines, and exams into GapTracker.
+
+<p align="center">
+  <a href="docs/images/moodle-connect.png">
+    <img
+      src="docs/images/moodle-connect.png"
+      alt="GapTracker Moodle connection screen"
+      width="300"
+    >
+  </a>
+</p>
+
+### Flexible Institutional Access
+
+Moodle availability differs between institutions. GapTracker supports institutional SSO, personal Moodle tokens, and calendar-link import when full Moodle services are restricted or unavailable. Institutional sign-in responses are verified before the connection is accepted.
+
+### Academic Import
+
+Depending on the services available at the institution, GapTracker can import:
+
+- Moodle courses.
+- Assignments and due dates.
+- Assignment submission status.
+- Calendar events.
+- Exam dates and academic deadlines.
+
+Imported information is matched with the appropriate course. Calendar deadlines become GapTracker assignments, while exams appear as Dashboard events.
+
+Moodle-imported courses are excluded from GPA calculations. Imported Moodle data may not contain a complete or institutionally consistent grade history, so keeping it separate prevents incomplete information from affecting the GPA managed by the student.
+
+### Privacy by Design
+
+The integration is designed to minimize exposure of academic data:
+
+- Moodle communication occurs directly between the device and institution.
+- GapTracker does not operate an intermediary server for Moodle authentication or synchronization.
+- Authentication tokens are protected using secure iOS storage.
+- Moodle connections require HTTPS.
+- Synchronization occurs only when needed rather than through a continuous connection.
+
+### Synchronization
+
+Students can refresh Moodle manually using **Sync now**. GapTracker can also check for newly published assignments during supported iOS background-refresh opportunities and when the app returns to the foreground. Synchronization is throttled to reduce unnecessary network activity.
 
 ## Privacy-Oriented Product Direction
 
@@ -191,6 +240,7 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 - English and Hebrew localization.
 - On-device course, topic, assignment, grade, note, and progress management.
 - Lock Screen study sessions, a Home Screen progress widget, and study Insights.
+- Direct Moodle integration with institution-supported sign-in and privacy-conscious synchronization.
 - Optional iCloud sync for keeping courses available across devices.
 
 ### Product, Design, and Research
@@ -227,14 +277,16 @@ GapTracker/
     images/
       dashboard.png
       exam-readiness.png
+      moodle-connect.png
       todays-focus.png
 ```
 
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 2.0.1.
-- Version 2.0.1 includes a redesigned Exam Readiness interface.
+- The current App Store release is version 2.1.
+- Version 2.0.1 included a redesigned Exam Readiness interface.
+- Version 2.1 introduces direct Moodle integration for courses, assignments, deadlines, exams, and submission status.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
@@ -249,6 +301,7 @@ GapTracker/
 - Implemented AI-assisted syllabus extraction and topic generation.
 - Added readiness scoring, critical-gap prioritization, and daily focus planning.
 - Built assignment planning, GPA and degree-progress tracking, study Insights, and widget and Lock Screen integrations.
+- Designed and built the Moodle import, course matching, deadline, exam-event, and synchronization experience.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 
