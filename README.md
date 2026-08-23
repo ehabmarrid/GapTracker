@@ -7,12 +7,12 @@
 </p>
 
 <p align="center">
-  <strong>Your syllabus, a study plan.</strong><br>
-  GapTracker helps students turn courses, syllabi, Moodle coursework, assignments, exam dates, grades, and knowledge gaps into a clear readiness score and a daily study focus.
+  <strong>Exams, assignments, and GPA. One clear plan.</strong><br>
+  GapTracker brings courses, syllabi, assignments, learning-platform deadlines, grades, and knowledge gaps into one clear study plan.
 </p>
 
 <p align="center">
-  iPhone & iPad · Version 2.1 · Education · English & Hebrew · iOS 18+
+  iPhone & iPad · Version 2.2 · Education · 9 languages · iOS 18+
 </p>
 
 ---
@@ -60,16 +60,20 @@ The app helps students:
 - Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
 - Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
-- Connect directly to supported Moodle institutions without a GapTracker-operated backend.
+- Manage Moodle and Canvas from one Learning Platforms hub.
 - Import Moodle courses, assignments, submission status, calendar deadlines, and exams.
-- Refresh Moodle manually or receive updates through privacy-conscious background synchronization.
+- Import Canvas assignments and due dates directly from the Canvas calendar.
+- Review Canvas items marked as New, Updated, or Matched before importing.
+- Keep learning-platform data on the device without creating a GapTracker account.
 - Keep progress available across devices with optional iCloud sync.
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **2.1**, is available on the App Store:
+**GapTracker: Study Planner**, version **2.2**, is available on the App Store:
 
 **[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB)**
+
+Version 2.2 introduces Canvas integration, a unified Learning Platforms hub, seven additional languages, and further fixes and interface polish.
 
 The app was previously published as **GapTracker: Exam Readiness**.
 
@@ -150,9 +154,27 @@ Students can add passed courses, view their current GPA, track degree completion
 
 Focus sessions can be started for a topic or assignment and are recorded in the study history. Active sessions can be followed from the Lock Screen, progress is available through the Home Screen widget, and Insights highlights study patterns and strongest study days.
 
-## Moodle Integration
+## Learning Platform Integrations
 
-Version 2.1 introduces direct Moodle integration, allowing students to bring courses, assignments, deadlines, and exams into GapTracker.
+Version 2.2 brings Moodle and Canvas together inside a single Learning Platforms hub.
+
+Students can connect, review imported academic information, and manage learning-platform content without creating a GapTracker account or sending it through a GapTracker-operated server.
+
+### Canvas
+
+GapTracker can connect to a Canvas calendar and import assignments and due dates directly into the study planner.
+
+Before importing, students can review the Canvas feed and see whether each item is:
+
+- **New** — not yet available in GapTracker
+- **Updated** — changed since it was previously imported
+- **Matched** — already connected to an existing assignment
+
+Approved items can be imported in one tap and matched with the appropriate course.
+
+### Moodle
+
+Version 2.1 introduced direct Moodle integration for courses, assignments, submission status, calendar events, and exams.
 
 <p align="center">
   <a href="docs/images/moodle-connect.png">
@@ -164,41 +186,45 @@ Version 2.1 introduces direct Moodle integration, allowing students to bring cou
   </a>
 </p>
 
-### Flexible Institutional Access
+Moodle availability differs between institutions. GapTracker supports institutional SSO, personal Moodle tokens, and calendar-link import when full Moodle services are restricted or unavailable.
 
-Moodle availability differs between institutions. GapTracker supports institutional SSO, personal Moodle tokens, and calendar-link import when full Moodle services are restricted or unavailable. Institutional sign-in responses are verified before the connection is accepted.
+Calendar deadlines become GapTracker assignments, while exams appear as Dashboard events. Moodle-imported courses remain excluded from GPA calculations because institutional data may not contain a complete grade history.
 
-### Academic Import
+### Local-First Privacy
 
-Depending on the services available at the institution, GapTracker can import:
+Learning-platform integrations follow the same local-first approach as the rest of GapTracker:
 
-- Moodle courses.
-- Assignments and due dates.
-- Assignment submission status.
-- Calendar events.
-- Exam dates and academic deadlines.
-
-Imported information is matched with the appropriate course. Calendar deadlines become GapTracker assignments, while exams appear as Dashboard events.
-
-Moodle-imported courses are excluded from GPA calculations. Imported Moodle data may not contain a complete or institutionally consistent grade history, so keeping it separate prevents incomplete information from affecting the GPA managed by the student.
-
-### Privacy by Design
-
-The integration is designed to minimize exposure of academic data:
-
-- Moodle communication occurs directly between the device and institution.
-- GapTracker does not operate an intermediary server for Moodle authentication or synchronization.
-- Authentication tokens are protected using secure iOS storage.
-- Moodle connections require HTTPS.
-- Synchronization occurs only when needed rather than through a continuous connection.
+- Moodle and Canvas communicate directly with the relevant institution.
+- GapTracker does not operate an intermediary account server or academic-data database.
+- Imported information remains on the device.
+- Moodle authentication tokens are protected using secure iOS storage.
+- Optional iCloud synchronization remains controlled by the user.
 
 ### Synchronization
 
-Students can refresh Moodle manually using **Sync now**. GapTracker can also check for newly published assignments during supported iOS background-refresh opportunities and when the app returns to the foreground. Synchronization is throttled to reduce unnecessary network activity.
+Students can refresh connected platforms from the Learning Platforms hub.
+
+Moodle can also check for newly published assignments during supported iOS background-refresh opportunities and when the app returns to the foreground. Synchronization is throttled to reduce unnecessary network activity.
+
+## Languages
+
+GapTracker 2.2 adds seven new interface languages:
+
+- Arabic
+- German
+- Spanish
+- French
+- Italian
+- Portuguese (Brazil)
+- Turkish
+
+Together with English and Hebrew, GapTracker is now available in nine languages.
 
 ## Privacy-Oriented Product Direction
 
-GapTracker is designed as a personal academic tool. Courses, topics, notes, and progress are treated as private study data. Only syllabus text that the student chooses to import is processed for topic extraction.
+GapTracker is designed as a local-first personal academic tool. Courses, assignments, grades, topics, notes, imported learning-platform information, and study progress remain on the device.
+
+No GapTracker account or developer-operated academic-data server is required. Optional iCloud synchronization is controlled by the user, and syllabus content is processed externally only when the user chooses an AI-assisted import action.
 
 ## Research Foundation
 
@@ -237,10 +263,11 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 - Native iOS app for iPhone and iPad.
 - SwiftUI-based interface and app workflow.
 - iOS/iPadOS 18+ support.
-- English and Hebrew localization.
+- Localized in Arabic, English, French, German, Hebrew, Italian, Portuguese (Brazil), Spanish, and Turkish.
 - On-device course, topic, assignment, grade, note, and progress management.
 - Lock Screen study sessions, a Home Screen progress widget, and study Insights.
-- Direct Moodle integration with institution-supported sign-in and privacy-conscious synchronization.
+- Direct Moodle and Canvas integrations with a unified Learning Platforms hub.
+- Local-first learning-platform imports without a GapTracker account or intermediary server.
 - Optional iCloud sync for keeping courses available across devices.
 
 ### Product, Design, and Research
@@ -284,13 +311,14 @@ GapTracker/
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 2.1.
-- Version 2.0.1 included a redesigned Exam Readiness interface.
-- Version 2.1 introduces direct Moodle integration for courses, assignments, deadlines, exams, and submission status.
+- The current App Store release is version 2.2.
+- Version 2.0.1 expanded assignment planning, GPA tracking, and Exam Readiness.
+- Version 2.1 introduced direct Moodle integration.
+- Version 2.2 adds Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
-- Availability of AI-assisted features may depend on network access and the external AI-processing service.
+- Availability of external integrations may depend on network access and services operated by institutions or third-party providers.
 
 ## My Contributions
 
@@ -302,6 +330,9 @@ GapTracker/
 - Added readiness scoring, critical-gap prioritization, and daily focus planning.
 - Built assignment planning, GPA and degree-progress tracking, study Insights, and widget and Lock Screen integrations.
 - Designed and built the Moodle import, course matching, deadline, exam-event, and synchronization experience.
+- Designed and built the Canvas calendar import, feed review, assignment matching, and one-tap import experience.
+- Created the unified Learning Platforms hub for Moodle and Canvas.
+- Expanded GapTracker localization from two to nine languages.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 
