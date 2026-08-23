@@ -8,8 +8,9 @@ GapTracker does not operate a user-account server, application backend, or centr
 
 - App data is stored locally on the user's device.
 - iCloud synchronization is optional and provided through the user's Apple account.
-- Moodle communication occurs directly between the user's device and institution.
+- Moodle and Canvas communication occurs directly between the user's device and institution.
 - Moodle authentication tokens are stored in the iOS Keychain.
+- Imported learning-platform information remains on the device.
 - AI-assisted syllabus processing occurs only when initiated by the user.
 
 ## Supported Versions
@@ -18,8 +19,8 @@ Only the latest App Store version is considered for security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2.1     | :white_check_mark: |
-| < 2.1   | :x:                |
+| 2.2     | :white_check_mark: |
+| < 2.2   | :x:                |
 
 Users should update to the latest App Store version before reporting an issue.
 
@@ -46,7 +47,7 @@ Include:
 Reports should concern a reproducible security or privacy issue caused by GapTracker, including:
 
 - Unauthorized exposure of locally stored or iCloud-synchronized app data
-- Moodle authentication, import, or synchronization vulnerabilities
+- Moodle or Canvas authentication, import, matching, or synchronization vulnerabilities
 - Privacy issues involving AI-assisted syllabus processing
 
 ## Responsible Disclosure
@@ -61,7 +62,7 @@ Do not publicly disclose a vulnerability before it has been reviewed.
 
 ## Third-Party Services
 
-GapTracker integrates with services operated by other organizations, including Apple, iCloud, Moodle institutions, identity providers, and external AI-processing services.
+GapTracker integrates with services operated by other organizations, including Apple, iCloud, Moodle and Canvas institutions, identity providers, and external AI-processing services.
 
 GapTracker can investigate issues caused by how the application interacts with these services. It cannot control or correct vulnerabilities, outages, access restrictions, configuration problems, policy changes, or data-handling practices originating solely within a third-party service.
 
@@ -71,8 +72,8 @@ Issues affecting a third-party service independently of GapTracker should be rep
 
 The following are generally outside the scope of this policy:
 
-- Vulnerabilities originating solely in Apple, iCloud, Moodle, an educational institution, an identity provider, or an AI service
-- Compromised Apple, Moodle, or institutional accounts
+- Vulnerabilities originating solely in Apple, iCloud, Moodle, Canvas, an educational institution, an identity provider, or an AI service
+- Compromised Apple, Moodle, Canvas, or institutional accounts
 - Issues requiring physical access to an already unlocked device
 - Issues affecting unsupported GapTracker versions
 - Modified, jailbroken, or unsupported operating systems
