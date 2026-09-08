@@ -1,7 +1,7 @@
 # GapTracker: Study Planner
 
 <p align="center">
-  <a href="https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB">
+  <a href="https://apps.apple.com/app/id6782966586">
     <img src="https://img.shields.io/badge/Open_on_the-App_Store-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Open GapTracker: Study Planner on the App Store">
   </a>
 </p>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  iPhone & iPad · Version 2.2 · Education · 9 languages · iOS 18+
+  iPhone, iPad & Apple Watch · Version 2.3 · Education · 9 languages
 </p>
 
 ---
@@ -60,6 +60,9 @@ The app helps students:
 - Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
 - Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
+- Use the redesigned iPad interface with sidebar navigation and multi-column detail views.
+- Check exam readiness, exam countdowns, Today’s Focus, and study streak from Apple Watch.
+- Add GapTracker complications to an Apple Watch face for at-a-glance readiness.
 - Manage Moodle and Canvas from one Learning Platforms hub.
 - Import Moodle courses, assignments, submission status, calendar deadlines, and exams.
 - Import Canvas assignments and due dates directly from the Canvas calendar.
@@ -69,11 +72,11 @@ The app helps students:
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **2.2**, is available on the App Store:
+**GapTracker: Study Planner**, version **2.3**, is available on the App Store:
 
-**[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/tw/app/gaptracker-study-planner/id6782966586?l=en-GB)**
+**[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/app/id6782966586)**
 
-Version 2.2 introduces Canvas integration, a unified Learning Platforms hub, seven additional languages, and further fixes and interface polish.
+Version 2.3 introduces a redesigned iPad experience and brings GapTracker to Apple Watch, with glanceable readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
 
 The app was previously published as **GapTracker: Exam Readiness**.
 
@@ -137,6 +140,25 @@ The readiness screen shows one score per course and an overall readiness score. 
 ### Today's Focus
 
 Today's Focus ranks what the student should study next based on urgency, severity, and the daily study-time budget. Instead of showing every possible task, it turns the semester into a realistic plan for the day.
+
+## iPad and Apple Watch
+
+Version 2.3 expands GapTracker across more Apple devices while keeping the core study-planning experience familiar.
+
+### Redesigned for iPad
+
+The iPad experience now uses a dedicated sidebar for browsing courses, assignments, and settings. Details appear beside the selected item in a spacious multi-column layout that makes better use of the larger screen.
+
+### GapTracker for Apple Watch
+
+The Apple Watch app keeps essential study information within easy reach:
+
+- Exam readiness
+- Upcoming exam countdowns
+- Today’s Focus
+- Current study streak
+
+Watch-face complications provide glanceable access to readiness information throughout the day.
 
 ## Assignments, GPA, and Study Momentum
 
@@ -258,11 +280,13 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 
 ## Technology
 
-### iOS Application
+### Apple Platforms
 
-- Native iOS app for iPhone and iPad.
+- Native app experiences for iPhone, iPad, and Apple Watch.
 - SwiftUI-based interface and app workflow.
 - iOS/iPadOS 18+ support.
+- Redesigned iPad navigation with a sidebar and multi-column detail views.
+- Apple Watch access to readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
 - Localized in Arabic, English, French, German, Hebrew, Italian, Portuguese (Brazil), Spanish, and Turkish.
 - On-device course, topic, assignment, grade, note, and progress management.
 - Lock Screen study sessions, a Home Screen progress widget, and study Insights.
@@ -311,10 +335,11 @@ GapTracker/
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 2.2.
+- The current App Store release is version 2.3.
 - Version 2.0.1 expanded assignment planning, GPA tracking, and Exam Readiness.
 - Version 2.1 introduced direct Moodle integration.
-- Version 2.2 adds Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.
+- Version 2.2 added Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.
+- Version 2.3 introduces the redesigned iPad experience and GapTracker for Apple Watch.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
@@ -333,6 +358,8 @@ GapTracker/
 - Designed and built the Canvas calendar import, feed review, assignment matching, and one-tap import experience.
 - Created the unified Learning Platforms hub for Moodle and Canvas.
 - Expanded GapTracker localization from two to nine languages.
+- Redesigned the iPad experience with sidebar navigation and multi-column layouts.
+- Designed and built the Apple Watch experience, including readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 
