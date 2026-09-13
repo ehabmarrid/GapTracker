@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  iPhone, iPad & Apple Watch · Version 2.3 · Education · 9 languages
+  iPhone, iPad, Mac & Apple Watch · Version 3.0 · Education · 9 languages
 </p>
 
 ---
@@ -34,6 +34,29 @@
     </td>
     <td valign="top">
       <img src="docs/images/todays-focus.png" alt="GapTracker today's focus screenshot" width="250">
+    </td>
+  </tr>
+</table>
+
+### New on Mac in Version 3.0
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="docs/images/mac-dashboard.png">
+        <img src="docs/images/mac-dashboard.png" alt="GapTracker dashboard on Mac" width="430">
+      </a>
+      <br>
+      <strong>Mac Dashboard</strong><br>
+      <sub>Readiness, deadlines, Today's Focus, and study momentum at a glance.</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="docs/images/mac-assignment-planner.png">
+        <img src="docs/images/mac-assignment-planner.png" alt="GapTracker assignment planner on Mac" width="430">
+      </a>
+      <br>
+      <strong>Assignment Planner</strong><br>
+      <sub>Review deadlines, work through subtasks, and begin a focused study session.</sub>
     </td>
   </tr>
 </table>
@@ -60,9 +83,15 @@ The app helps students:
 - Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
 - Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
+- Use the native Mac app with desktop navigation, keyboard shortcuts, a Settings window, a menu-bar focus timer, and a desktop widget.
 - Use the redesigned iPad interface with sidebar navigation and multi-column detail views.
-- Check exam readiness, exam countdowns, Today’s Focus, and study streak from Apple Watch.
-- Add GapTracker complications to an Apple Watch face for at-a-glance readiness.
+- Check exam readiness, exam countdowns, Today's Focus, and study streak from Apple Watch.
+- Start today's topic, pause or finish a focus session, and follow its live countdown from Apple Watch.
+- Add GapTracker complications to an Apple Watch face for at-a-glance readiness and focus-session status.
+- Start studying, log a study session, add an assignment, or open a course with Siri and Shortcuts.
+- Find courses and assignments through Spotlight and open them directly in GapTracker.
+- Choose course-specific widgets, complete today's topics from the large widget, and add Lock Screen widgets.
+- Start a focus session from Control Center or the Action button, then pause or finish it from the Live Activity.
 - Manage Moodle and Canvas from one Learning Platforms hub.
 - Import Moodle courses, assignments, submission status, calendar deadlines, and exams.
 - Import Canvas assignments and due dates directly from the Canvas calendar.
@@ -72,15 +101,19 @@ The app helps students:
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **2.3**, is available on the App Store:
+**GapTracker: Study Planner**, version **3.0**, is available on the App Store:
 
 **[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/app/id6782966586)**
 
-Version 2.3 introduces a redesigned iPad experience and brings GapTracker to Apple Watch, with glanceable readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
+Version 3.0 brings GapTracker to Mac, adds Siri, Shortcuts, and Spotlight integrations, expands widgets and system controls, and gives Apple Watch more ways to manage focus sessions.
+
+The Mac app includes a native sidebar, a dedicated Settings window, keyboard shortcuts, a menu-bar focus timer, and a desktop widget. One App Store purchase provides access across supported Apple devices.
+
+Version 3.0 is designed to run smoothly on iOS 27, iPadOS 27, macOS 27, and watchOS 27 while continuing to support iOS 18 and later.
 
 The app was previously published as **GapTracker: Exam Readiness**.
 
-The older Google Cloud web demo is no longer active, so this repository now focuses on the shipped iOS product, product screenshots, research background, and documentation.
+The older Google Cloud web demo is no longer active, so this repository now focuses on the shipped Apple-platform product, product screenshots, research background, and documentation.
 
 ## Problem
 
@@ -141,24 +174,63 @@ The readiness screen shows one score per course and an overall readiness score. 
 
 Today's Focus ranks what the student should study next based on urgency, severity, and the daily study-time budget. Instead of showing every possible task, it turns the semester into a realistic plan for the day.
 
-## iPad and Apple Watch
+## Mac, iPad, and Apple Watch
 
-Version 2.3 expands GapTracker across more Apple devices while keeping the core study-planning experience familiar.
+Version 3.0 brings GapTracker to Mac and expands its system-level study controls, building on the iPad and Apple Watch experiences introduced in version 2.3.
+
+### Native Mac App
+
+GapTracker is now a native Mac app with the same local-first approach used on iPhone and iPad. The desktop experience includes:
+
+- Sidebar navigation for Dashboard, Critical Gaps, Readiness, Courses, and Search.
+- A dedicated Settings window.
+- Keyboard shortcuts for common actions.
+- A menu-bar focus timer.
+- A desktop widget for study progress.
+- Optional iCloud synchronization across supported Apple devices.
 
 ### Redesigned for iPad
 
-The iPad experience now uses a dedicated sidebar for browsing courses, assignments, and settings. Details appear beside the selected item in a spacious multi-column layout that makes better use of the larger screen.
+Version 2.3 introduced a dedicated sidebar for browsing courses, assignments, and settings. Details appear beside the selected item in a spacious multi-column layout that makes better use of the larger screen.
 
 ### GapTracker for Apple Watch
 
-The Apple Watch app keeps essential study information within easy reach:
+The Apple Watch app keeps essential study information and focus controls within easy reach:
 
 - Exam readiness
 - Upcoming exam countdowns
-- Today’s Focus
+- Today's Focus
 - Current study streak
+- Starting today's priority topic
+- Pausing or finishing an active focus session
+- A live focus countdown on the watch face
 
-Watch-face complications provide glanceable access to readiness information throughout the day.
+Watch-face complications provide glanceable access to readiness and active-session information throughout the day.
+
+## Siri, Shortcuts, and Spotlight
+
+Version 3.0 makes core GapTracker actions available through Apple system integrations:
+
+- Ask Siri to start studying and begin a focus session on the highest-priority topic.
+- Log a study session, add an assignment, or open a course by voice.
+- Add GapTracker actions to personal Shortcuts and automations.
+- Find courses and assignments in Spotlight and open the matching screen directly.
+
+## Widgets and System Controls
+
+GapTracker's widgets and focus-session controls now extend across more system surfaces:
+
+- Choose a specific course for a widget.
+- Complete today's topics from the large widget.
+- Add GapTracker widgets to the Lock Screen.
+- Start a focus session from Control Center or the Action button.
+- Pause or finish an active session from its Live Activity.
+
+## Platform Compatibility
+
+Version 3.0 prepares GapTracker for iOS 27, iPadOS 27, macOS 27, and watchOS 27 from day one. iOS 18 and later remain supported.
+
+This release also establishes the foundation for deeper Siri and Spotlight integration, smarter widgets, and additional system features in future updates.
 
 ## Assignments, GPA, and Study Momentum
 
@@ -219,7 +291,7 @@ Learning-platform integrations follow the same local-first approach as the rest 
 - Moodle and Canvas communicate directly with the relevant institution.
 - GapTracker does not operate an intermediary account server or academic-data database.
 - Imported information remains on the device.
-- Moodle authentication tokens are protected using secure iOS storage.
+- Moodle authentication tokens are protected using the Apple Keychain.
 - Optional iCloud synchronization remains controlled by the user.
 
 ### Synchronization
@@ -282,14 +354,17 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 
 ### Apple Platforms
 
-- Native app experiences for iPhone, iPad, and Apple Watch.
+- Native app experiences for iPhone, iPad, Mac, and Apple Watch.
 - SwiftUI-based interface and app workflow.
 - iOS/iPadOS 18+ support.
+- Compatibility preparation for iOS 27, iPadOS 27, macOS 27, and watchOS 27.
+- Native Mac navigation, Settings, keyboard shortcuts, menu-bar focus timer, and desktop widget.
 - Redesigned iPad navigation with a sidebar and multi-column detail views.
-- Apple Watch access to readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
+- Apple Watch access to readiness, exam countdowns, Today's Focus, study streaks, focus controls, and watch-face complications.
+- Siri, Shortcuts, and Spotlight integrations for study actions and direct navigation.
+- Home Screen, Lock Screen, and desktop widgets, plus Live Activity, Control Center, and Action button controls.
 - Localized in Arabic, English, French, German, Hebrew, Italian, Portuguese (Brazil), Spanish, and Turkish.
 - On-device course, topic, assignment, grade, note, and progress management.
-- Lock Screen study sessions, a Home Screen progress widget, and study Insights.
 - Direct Moodle and Canvas integrations with a unified Learning Platforms hub.
 - Local-first learning-platform imports without a GapTracker account or intermediary server.
 - Optional iCloud sync for keeping courses available across devices.
@@ -328,6 +403,8 @@ GapTracker/
     images/
       dashboard.png
       exam-readiness.png
+      mac-assignment-planner.png
+      mac-dashboard.png
       moodle-connect.png
       todays-focus.png
 ```
@@ -335,11 +412,12 @@ GapTracker/
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 2.3.
+- The current App Store release is version 3.0.
 - Version 2.0.1 expanded assignment planning, GPA tracking, and Exam Readiness.
 - Version 2.1 introduced direct Moodle integration.
 - Version 2.2 added Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.
-- Version 2.3 introduces the redesigned iPad experience and GapTracker for Apple Watch.
+- Version 2.3 introduced the redesigned iPad experience and GapTracker for Apple Watch.
+- Version 3.0 adds the native Mac app, Siri, Shortcuts, Spotlight, expanded widgets and system controls, new Apple Watch focus actions, and compatibility preparation for the version 27 Apple operating systems.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
@@ -359,7 +437,11 @@ GapTracker/
 - Created the unified Learning Platforms hub for Moodle and Canvas.
 - Expanded GapTracker localization from two to nine languages.
 - Redesigned the iPad experience with sidebar navigation and multi-column layouts.
-- Designed and built the Apple Watch experience, including readiness, exam countdowns, Today’s Focus, study streaks, and watch-face complications.
+- Designed and built the Apple Watch experience, including readiness, exam countdowns, Today's Focus, study streaks, and watch-face complications.
+- Designed and built the native Mac experience, including sidebar navigation, Settings, keyboard shortcuts, a menu-bar focus timer, and a desktop widget.
+- Added Siri, Shortcuts, and Spotlight integrations for study actions and direct navigation.
+- Expanded widgets and focus-session controls across the Home Screen, Lock Screen, Live Activities, Control Center, the Action button, and Apple Watch.
+- Prepared the app experience for iOS 27, iPadOS 27, macOS 27, and watchOS 27 while retaining iOS 18 support.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 

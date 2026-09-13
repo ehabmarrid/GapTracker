@@ -1,6 +1,6 @@
 # Security Policy
 
-GapTracker is a closed-source iOS application. This public repository contains product documentation, research materials, and screenshots. It does not distribute the application source code.
+GapTracker is a closed-source application for iPhone, iPad, Mac, and Apple Watch. This public repository contains product documentation, research materials, and screenshots. It does not distribute the application source code.
 
 ## Data Architecture
 
@@ -9,9 +9,10 @@ GapTracker does not operate a user-account server, application backend, or centr
 - App data is stored locally on the user's device.
 - iCloud synchronization is optional and provided through the user's Apple account.
 - Moodle and Canvas communication occurs directly between the user's device and institution.
-- Moodle authentication tokens are stored in the iOS Keychain.
+- Moodle authentication tokens are stored in the Apple Keychain.
 - Imported learning-platform information remains on the device.
 - AI-assisted syllabus processing occurs only when initiated by the user.
+- Siri, Shortcuts, Spotlight, widgets, Live Activities, and Control Center integrations use Apple system frameworks on the user's devices.
 
 ## Supported Versions
 
@@ -19,8 +20,8 @@ Only the latest App Store version is considered for security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2.3     | :white_check_mark: |
-| < 2.3   | :x:                |
+| 3.0     | :white_check_mark: |
+| < 3.0   | :x:                |
 
 Users should update to the latest App Store version before reporting an issue.
 
@@ -37,7 +38,7 @@ If private reporting is unavailable, contact the repository owner through their 
 Include:
 
 - The affected GapTracker version
-- Device model and iOS version
+- Device model, Apple platform, and operating system version
 - A description of the issue and its potential impact
 - Clear reproduction steps
 - Relevant screenshots with personal and institutional information removed
@@ -49,6 +50,7 @@ Reports should concern a reproducible security or privacy issue caused by GapTra
 - Unauthorized exposure of locally stored or iCloud-synchronized app data
 - Moodle or Canvas authentication, import, matching, or synchronization vulnerabilities
 - Privacy issues involving AI-assisted syllabus processing
+- Security or privacy issues caused by GapTracker's Mac implementation or its use of Apple system integrations
 
 ## Responsible Disclosure
 
