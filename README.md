@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  iPhone, iPad, Mac & Apple Watch · Version 3.0 · Education · 9 languages
+  iPhone, iPad, Mac & Apple Watch · Version 3.1 · Education · 9 languages
 </p>
 
 ---
@@ -76,17 +76,23 @@ The app helps students:
 - Track topic difficulty, severity, and progress.
 - See a readiness score for each course and overall readiness across courses.
 - Prioritize critical gaps before exams.
+- Understand why each critical topic needs attention and choose the next study action.
 - Build a realistic daily focus plan based on the study time available.
+- Generate a weekly study plan from courses, topics, assignments, deadlines, and daily availability on a supported Apple Intelligence iPhone or iPad.
+- Review, move, lock, or remove planned sessions before using the plan.
+- Start planned sessions in the focus timer and check them off when complete.
 - Plan assignments with due dates, grade weights, time estimates, and subtasks.
 - See assignments due today, this week, or overdue.
 - Track current GPA, target grades, projected results, passed courses, and degree completion.
 - Enter a final course grade to move the course to Passed and update the GPA.
 - Run focus sessions, track study minutes, and build a study streak.
+- Check in after a topic session to record whether it feels clearer or remains difficult.
 - Follow active study sessions on the Lock Screen, check progress from the Home Screen widget, and review study patterns in Insights.
 - Use the native Mac app with desktop navigation, keyboard shortcuts, a Settings window, a menu-bar focus timer, and a desktop widget.
 - Use the redesigned iPad interface with sidebar navigation and multi-column detail views.
 - Check exam readiness, exam countdowns, Today's Focus, and study streak from Apple Watch.
 - Start today's topic, pause or finish a focus session, and follow its live countdown from Apple Watch.
+- View this week's plan on Apple Watch and start a planned session on the paired iPhone.
 - Add GapTracker complications to an Apple Watch face for at-a-glance readiness and focus-session status.
 - Start studying, log a study session, add an assignment, or open a course with Siri and Shortcuts.
 - Find courses and assignments through Spotlight and open them directly in GapTracker.
@@ -101,19 +107,50 @@ The app helps students:
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **3.0**, is available on the App Store:
+**GapTracker: Study Planner**, version **3.1**, is available on the App Store:
 
 **[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/app/id6782966586)**
 
-Version 3.0 brings GapTracker to Mac, adds Siri, Shortcuts, and Spotlight integrations, expands widgets and system controls, and gives Apple Watch more ways to manage focus sessions.
+Version 3.1 introduces on-device Weekly Plan generation, redesigned Critical Gaps, post-session check-ins, and expanded Siri, Shortcuts, Spotlight, and Apple Watch support.
 
-The Mac app includes a native sidebar, a dedicated Settings window, keyboard shortcuts, a menu-bar focus timer, and a desktop widget. One App Store purchase provides access across supported Apple devices.
+GapTracker remains available on iPhone, iPad, Mac, and Apple Watch. The native Mac experience introduced in version 3.0 includes a sidebar, a dedicated Settings window, keyboard shortcuts, a menu-bar focus timer, and a desktop widget. One App Store purchase provides access across supported Apple devices.
 
-Version 3.0 is designed to run smoothly on iOS 27, iPadOS 27, macOS 27, and watchOS 27 while continuing to support iOS 18 and later.
+Version 3.1 continues the platform preparation for iOS 27, iPadOS 27, macOS 27, and watchOS 27 while retaining support for iOS 18 and later. Weekly Plan generation has additional device and language requirements described below.
 
 The app was previously published as **GapTracker: Exam Readiness**.
 
 The older Google Cloud web demo is no longer active, so this repository now focuses on the shipped Apple-platform product, product screenshots, research background, and documentation.
+
+## Version 3.1 Preview
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="docs/images/weekly-plan.png">
+        <img
+          src="docs/images/weekly-plan.png"
+          alt="GapTracker Weekly Plan"
+          width="410"
+        >
+      </a>
+      <br>
+      <strong>Weekly Plan</strong><br>
+      <sub>Build a realistic study week around priorities, deadlines, and daily availability.</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="docs/images/critical-gaps.png">
+        <img
+          src="docs/images/critical-gaps.png"
+          alt="GapTracker redesigned Critical Gaps"
+          width="430"
+        >
+      </a>
+      <br>
+      <strong>Redesigned Critical Gaps</strong><br>
+      <sub>Understand why a topic needs attention and take the next study action directly.</sub>
+    </td>
+  </tr>
+</table>
 
 ## Problem
 
@@ -174,6 +211,51 @@ The readiness screen shows one score per course and an overall readiness score. 
 
 Today's Focus ranks what the student should study next based on urgency, severity, and the daily study-time budget. Instead of showing every possible task, it turns the semester into a realistic plan for the day.
 
+## Weekly Plan
+
+Version 3.1 introduces Weekly Plan, an on-device planning experience that turns upcoming academic work into a realistic study schedule.
+
+Open Today's Focus and select **Plan Your Week**. GapTracker considers courses, topics, assignments, deadlines, priorities, and the time available each day to prepare a draft week of study sessions.
+
+Before using the plan, students can:
+
+- Review the proposed sessions.
+- Move sessions between days.
+- Adjust session duration.
+- Lock sessions that should not change.
+- Remove sessions that are not needed.
+- Regenerate the remaining plan.
+- Select **Use This Plan** when the schedule is ready.
+
+Every planned session can be opened in the focus timer. Completing the session also marks it complete in the weekly plan.
+
+### Privacy and Availability
+
+Weekly Plan generation runs on the device using Apple Intelligence. The courses, topics, assignments, deadlines, and availability used to create a plan do not leave the iPhone or iPad.
+
+> **Weekly Plan requirements:** Generation requires an Apple Intelligence-supported iPhone or iPad running iOS 26 or iPadOS 26 or later. It is not currently available in Hebrew or Arabic. All other GapTracker features continue to work across supported devices and languages.
+
+## Critical Gaps and Session Check-Ins
+
+### Redesigned Critical Gaps
+
+Critical Gaps is now an action-oriented workspace that explains which topics require attention and what to do next.
+
+For each critical topic, students can:
+
+- See why the topic needs attention and review the factors behind its impact score.
+- Choose a suggested study action based on their own course material.
+- Select a preferred session length that GapTracker remembers.
+- Start a focused study session directly.
+- Add the topic to Today's Focus.
+- Mark the topic as resolved, with an immediate undo option.
+
+### Check In After a Session
+
+When a topic-focused session ends, students can indicate whether the topic feels clearer or remains difficult.
+
+The check-in gives GapTracker a more current understanding of the topic so the next session can continue from where the student left off.
+
 ## Mac, iPad, and Apple Watch
 
 Version 3.0 brings GapTracker to Mac and expands its system-level study controls, building on the iPad and Apple Watch experiences introduced in version 2.3.
@@ -204,17 +286,23 @@ The Apple Watch app keeps essential study information and focus controls within 
 - Starting today's priority topic
 - Pausing or finishing an active focus session
 - A live focus countdown on the watch face
+- This week's planned study sessions
+- Starting a planned session on the paired iPhone
 
 Watch-face complications provide glanceable access to readiness and active-session information throughout the day.
 
 ## Siri, Shortcuts, and Spotlight
 
-Version 3.0 makes core GapTracker actions available through Apple system integrations:
+Version 3.1 expands GapTracker's Apple system integrations with new planning actions:
 
-- Ask Siri to start studying and begin a focus session on the highest-priority topic.
+- Say "Start studying in GapTracker" to begin a focus session on the highest-priority topic.
+- Say "Plan my study week in GapTracker" to open Weekly Plan generation.
+- Say "Show my study plan" to open the current plan.
+- Say "Start my next planned session" to continue with the next scheduled item.
+- Say "Open Today's Focus" to move directly to the daily plan.
 - Log a study session, add an assignment, or open a course by voice.
 - Add GapTracker actions to personal Shortcuts and automations.
-- Find courses and assignments in Spotlight and open the matching screen directly.
+- Find courses, assignments, and planned sessions in Spotlight and open the matching screen directly.
 
 ## Widgets and System Controls
 
@@ -228,9 +316,9 @@ GapTracker's widgets and focus-session controls now extend across more system su
 
 ## Platform Compatibility
 
-Version 3.0 prepares GapTracker for iOS 27, iPadOS 27, macOS 27, and watchOS 27 from day one. iOS 18 and later remain supported.
+Version 3.1 is available across GapTracker's supported iPhone, iPad, Mac, and Apple Watch experiences. The compatibility work introduced in version 3.0 prepares the app for iOS 27, iPadOS 27, macOS 27, and watchOS 27 while iOS 18 and later remain supported.
 
-This release also establishes the foundation for deeper Siri and Spotlight integration, smarter widgets, and additional system features in future updates.
+Weekly Plan generation is the only version 3.1 feature with additional requirements: it needs Apple Intelligence on a supported iPhone or iPad running iOS 26 or iPadOS 26 or later and is not yet available in Hebrew or Arabic. All other version 3.1 features work on every device supported by GapTracker.
 
 ## Assignments, GPA, and Study Momentum
 
@@ -314,11 +402,15 @@ GapTracker 2.2 adds seven new interface languages:
 
 Together with English and Hebrew, GapTracker is now available in nine languages.
 
+All nine interface languages remain supported in version 3.1. Weekly Plan generation is currently unavailable in Hebrew and Arabic; this limitation applies only to plan generation.
+
 ## Privacy-Oriented Product Direction
 
 GapTracker is designed as a local-first personal academic tool. Courses, assignments, grades, topics, notes, imported learning-platform information, and study progress remain on the device.
 
 No GapTracker account or developer-operated academic-data server is required. Optional iCloud synchronization is controlled by the user, and syllabus content is processed externally only when the user chooses an AI-assisted import action.
+
+Weekly Plan generation uses Apple Intelligence on supported iPhones and iPads. The academic and availability information used to build a plan is processed on the device and is not sent to a GapTracker-operated server.
 
 ## Research Foundation
 
@@ -365,6 +457,9 @@ The initial academic research phase was completed collaboratively by **Ehab Marr
 - Home Screen, Lock Screen, and desktop widgets, plus Live Activity, Control Center, and Action button controls.
 - Localized in Arabic, English, French, German, Hebrew, Italian, Portuguese (Brazil), Spanish, and Turkish.
 - On-device course, topic, assignment, grade, note, and progress management.
+- On-device Weekly Plan generation using Apple Intelligence on supported iPhones and iPads.
+- Weekly Plan editing, focus-session integration, and completion tracking.
+- Critical Gap impact explanations, suggested study actions, and post-session check-ins.
 - Direct Moodle and Canvas integrations with a unified Learning Platforms hub.
 - Local-first learning-platform imports without a GapTracker account or intermediary server.
 - Optional iCloud sync for keeping courses available across devices.
@@ -401,23 +496,28 @@ GapTracker/
     research-summary.md
     GapTracker-Research-Models.pptx
     images/
+      critical-gaps.png
       dashboard.png
       exam-readiness.png
       mac-assignment-planner.png
       mac-dashboard.png
       moodle-connect.png
       todays-focus.png
+      weekly-plan.png
 ```
 
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 3.0.
+- The current App Store release is version 3.1.
 - Version 2.0.1 expanded assignment planning, GPA tracking, and Exam Readiness.
 - Version 2.1 introduced direct Moodle integration.
 - Version 2.2 added Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.
 - Version 2.3 introduced the redesigned iPad experience and GapTracker for Apple Watch.
-- Version 3.0 adds the native Mac app, Siri, Shortcuts, Spotlight, expanded widgets and system controls, new Apple Watch focus actions, and compatibility preparation for the version 27 Apple operating systems.
+- Version 3.0 added the native Mac app, Siri, Shortcuts, Spotlight, expanded widgets and system controls, new Apple Watch focus actions, and compatibility preparation for the version 27 Apple operating systems.
+- Version 3.1 introduces on-device Weekly Plan generation, redesigned Critical Gaps, post-session check-ins, and expanded Siri, Shortcuts, Spotlight, and Apple Watch support.
+- Weekly Plan generation requires Apple Intelligence on a supported iPhone or iPad running iOS 26 or iPadOS 26 or later.
+- Weekly Plan generation is not currently available in Hebrew or Arabic. All other features remain available across supported devices and languages.
 - The previous Google Cloud web demo is no longer online.
 - AI-extracted syllabus topics should be reviewed and corrected by the student before being treated as final.
 - The readiness score is a planning and prioritization indicator. It is not a scientifically validated predictor of exam performance.
@@ -426,7 +526,7 @@ GapTracker/
 ## My Contributions
 
 - Continued the project independently after the initial research phase.
-- Redesigned and expanded the original product concept into a real iOS app.
+- Redesigned and expanded the original product concept into a real Apple-platform app.
 - Designed the current user interface, app screenshots, and product workflows.
 - Built the course, syllabus, gap, readiness, focus, and progress-tracking flows.
 - Implemented AI-assisted syllabus extraction and topic generation.
@@ -442,6 +542,10 @@ GapTracker/
 - Added Siri, Shortcuts, and Spotlight integrations for study actions and direct navigation.
 - Expanded widgets and focus-session controls across the Home Screen, Lock Screen, Live Activities, Control Center, the Action button, and Apple Watch.
 - Prepared the app experience for iOS 27, iPadOS 27, macOS 27, and watchOS 27 while retaining iOS 18 support.
+- Designed and built the Weekly Plan generation, review, editing, focus-session, and completion workflow.
+- Redesigned Critical Gaps around impact explanations, suggested study actions, session-length preferences, and direct resolution.
+- Added post-session clarity check-ins that inform the student's next topic session.
+- Expanded Siri, Shortcuts, Spotlight, and Apple Watch support for planned study sessions.
 - Prepared the App Store release assets and public product documentation.
 - Prepared the GitHub README, research documentation, and project attribution materials.
 

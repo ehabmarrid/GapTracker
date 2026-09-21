@@ -12,6 +12,8 @@ GapTracker does not operate a user-account server, application backend, or centr
 - Moodle authentication tokens are stored in the Apple Keychain.
 - Imported learning-platform information remains on the device.
 - AI-assisted syllabus processing occurs only when initiated by the user.
+- Weekly Plan generation uses Apple Intelligence on supported iPhones and iPads.
+- Course, topic, assignment, deadline, and availability information used to generate a plan is processed on the device and is not sent to a GapTracker-operated server.
 - Siri, Shortcuts, Spotlight, widgets, Live Activities, and Control Center integrations use Apple system frameworks on the user's devices.
 
 ## Supported Versions
@@ -20,8 +22,8 @@ Only the latest App Store version is considered for security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 3.0     | :white_check_mark: |
-| < 3.0   | :x:                |
+| 3.1     | :white_check_mark: |
+| < 3.1   | :x:                |
 
 Users should update to the latest App Store version before reporting an issue.
 
