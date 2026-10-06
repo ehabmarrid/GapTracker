@@ -2,7 +2,13 @@
 
 <p align="center">
   <a href="https://apps.apple.com/app/id6782966586">
-    <img src="https://img.shields.io/badge/Open_on_the-App_Store-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Open GapTracker: Study Planner on the App Store">
+    <img src="docs/images/app-store-badge.svg" alt="Download GapTracker: Study Planner on the App Store">
+  </a>
+  <a href="https://gaptrackerapp.com">
+    <img src="https://img.shields.io/badge/Visit-App_Website-34C759?style=for-the-badge&logo=safari&logoColor=white" alt="Visit the GapTracker website">
+  </a>
+  <a href="https://www.youtube.com/@GapTracker">
+    <img src="https://img.shields.io/badge/Watch_on-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch GapTracker on YouTube">
   </a>
 </p>
 
@@ -12,7 +18,7 @@
 </p>
 
 <p align="center">
-  iPhone, iPad, Mac & Apple Watch · Version 3.1 · Education · 9 languages
+  iPhone, iPad, Mac & Apple Watch · Version 3.2 · Education · 9 languages
 </p>
 
 ---
@@ -107,7 +113,7 @@ The app helps students:
 
 ## App Store Version
 
-**GapTracker: Study Planner**, version **3.1**, is available on the App Store:
+**GapTracker: Study Planner**, version **3.2**, is available on the App Store:
 
 **[Open GapTracker: Study Planner on the App Store](https://apps.apple.com/app/id6782966586)**
 
@@ -509,7 +515,7 @@ GapTracker/
 ## Product Status and Limitations
 
 - GapTracker is an active App Store product.
-- The current App Store release is version 3.1.
+- The current App Store release is version 3.2.
 - Version 2.0.1 expanded assignment planning, GPA tracking, and Exam Readiness.
 - Version 2.1 introduced direct Moodle integration.
 - Version 2.2 added Canvas integration, the Learning Platforms hub, seven additional languages, fixes, and interface polish.

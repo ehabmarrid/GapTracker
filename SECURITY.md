@@ -22,8 +22,8 @@ Only the latest App Store version is considered for security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 3.1     | :white_check_mark: |
-| < 3.1   | :x:                |
+| 3.2     | :white_check_mark: |
+| < 3.2   | :x:                |
 
 Users should update to the latest App Store version before reporting an issue.
 
